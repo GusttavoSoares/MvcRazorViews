@@ -17,7 +17,7 @@ else
 
 @foreach (var estudante in Model)
 {
-    <a href="Show/@estudante.Id"><h4>@estudante.Nome</h4></a>
+    <a href="Estudante/Show/@estudante.Id"><h4>@estudante.Nome</h4></a>
     <p>@estudante.Endereco</p>
     @if(estudante.Ativo)
     {

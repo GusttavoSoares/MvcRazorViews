@@ -3,4 +3,19 @@
     ViewData["Title"] = "Estudante: ";
 }
 
-<h1>Estudante: @Model.Nome </h1>
+<h1> @Model.Nome </h1>
+
+ @if(Model.Ativo) {
+<button type="button">Iniciar Conversa</button> 
+<button type="button">Editar</button> 
+<button type="button">Desativar</button> 
+ } 
+ else
+{
+<button type="button">Ativar</button> 
+}
+<hr>
+
+<h4> Id: @Model.Id </h4>
+<h4> Nome: @Model.Nome </h4>
+<h4> Endereco: @Model.Endereco </h4>
